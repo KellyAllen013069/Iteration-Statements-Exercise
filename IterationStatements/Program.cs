@@ -64,7 +64,7 @@
         //Write a method to check if an integer(from the user) is in the range -10 to 10
         public static void InRange()
         {
-            Console.WriteLine("Please enter an integer: ");
+            Console.WriteLine("Please enter an integer to see if it is in range: ");
             var input = int.Parse(Console.ReadLine());
             var output = input >= -10 && input <= 10 ? "in the range" : "not in the range";
             Console.WriteLine($"Your number is {output} of -10 to 10");
@@ -73,11 +73,11 @@
         //Write a method to display the multiplication table(from 1 to 12) of a given integer
         public static void MultiplicationTable()
         {
-            Console.WriteLine("Please enter an integer: ");
+            Console.WriteLine("Please enter an integer to see it's multiplication table: ");
             var input = int.Parse(Console.ReadLine());
             for (int i=1;i<=12;i++)
             {
-                Console.WriteLine(i * input);
+                Console.WriteLine($"{input} x {i} = {i * input}");
             }
             
         }
@@ -95,7 +95,7 @@
             var result = IsEqual(firstInteger, secondInteger) ? "equal" : "not equal"; 
             Console.WriteLine($"{firstInteger} and {secondInteger} are {result}");
             
-            Console.WriteLine("Please enter an integer");
+            Console.WriteLine("Please enter an integer to see if it is odd or even");
             var input = int.Parse(Console.ReadLine());
             var isEvenResult = IsEven(input) ? "even" : "odd";
             Console.WriteLine($"The number you entered is {isEvenResult}");
